@@ -1,14 +1,7 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
 import sys
 import shutil
 import os
 from PIL import Image, ImageSequence
-
-
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -64,9 +57,8 @@ def shrink():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    path= 'C:/Users/malib/Documents/resize_test/media/'
+    path = 'C:/Users/malib/Downloads/NVSO/media/'
     files = import_folder(path)
     resize(path, files)
-
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
