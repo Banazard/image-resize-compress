@@ -7,6 +7,14 @@ def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
+def dialogue():
+    print('THIS IS IMAGE RESIZE PROGRAM')
+    path = input('ENTER THE IMAGE DIRECTORY PATH: ')
+    fix_path(path)
+
+def fix_path(path):
+    pass
+
 def import_folder(path):
     # make a new directory
     if not os.path.exists(f"{path}resized/"):
@@ -21,7 +29,7 @@ def import_folder(path):
 def resize(path, files):
     for file_name in files:
         img = Image.open(f"{path}{file_name}")
-        width = 1000 # you can set maximum width here
+        width = 1000 # you can set maximum width here :px
         height = round(img.height * width / img.width)
 
         if(img.width > width and file_name.endswith('.gif')):
@@ -57,7 +65,7 @@ def shrink():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    path = 'C:/Users/malib/Downloads/NVSO/media/'
+    path = 'C:/Users/malib/Pictures/NVSO/media/'
     files = import_folder(path)
     resize(path, files)
 
